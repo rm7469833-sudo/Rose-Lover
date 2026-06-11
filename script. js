@@ -1,0 +1,114 @@
+//alert("javaScript Loaded");
+// Login Function
+function login() {
+    let username = document.getElementById("username").value.trim();
+    let message = document.getElementById("message");
+
+    if (username === "") {
+        message.innerHTML = "Please enter your name";
+        message.style.color = "red";
+        return;
+    }
+
+    message.innerHTML = "Welcome " + username + "!";
+    message.style.color = "green";
+
+    setTimeout(() => {
+        document.getElementById("login-page").style.display = "none";
+        document.getElementById("website").style.display = "block";
+    }, 10);
+}
+
+// Flower Array
+let flowers = [
+    "Rose",
+    "Lavender",
+    "Peony",
+    "Sunflower",
+    "Chrysanthemum",
+    "Jouri Rose"
+];
+
+// Display Flowers
+function displayFlowers() {
+    let flowerList = document.getElementById("flowerList");
+
+    flowerList.innerHTML = "";
+
+    flowers.forEach((flower) => {
+        flowerList.innerHTML += 
+            `<li>${flower}</li>`
+        ;
+    });
+}
+
+// Add Flower
+function addFlower() {
+    let flowerName = document.getElementById("flowerName").value.trim();
+
+    if (flowerName === "") {
+        alert("Please enter a flower name");
+        return;
+    }
+
+    flowers.push(flowerName);
+
+    displayFlowers();
+
+    document.getElementById("flowerName").value = "";
+
+    alert("Flower added successfully");
+}
+
+// Delete Flower
+function deleteFlower() {
+    let flowerName = document.getElementById("deleteFlower").value.trim();
+
+    if (flowerName === "") {
+        alert("Please enter a flower name");
+        return;
+    }
+
+    let index = flowers.findIndex(
+        flower => flower.toLowerCase() === flowerName.toLowerCase()
+    );
+
+    if (index !== -1) {
+        flowers.splice(index, 1);
+        displayFlowers();
+        alert("Flower deleted successfully");
+    } else {
+        alert("Flower not found");
+    }
+
+    document.getElementById("deleteFlower").value = "";
+}
+
+// Search Flower
+function searchFlower() {
+    let flowerName = document.getElementById("searchFlower").value.trim();
+ let result = document.getElementById("searchResult");
+
+    if (flowerName === "") {
+        result.innerHTML = "Please enter a flower name";
+        result.style.color = "red";
+        return;
+    }
+
+    let found = flowers.find(
+        flower => flower.toLowerCase() === flowerName.toLowerCase()
+    );
+
+    if (found) {
+        result.innerHTML = "Flower found: " + found;
+        result.style.color = "green";
+    } else {
+        result.innerHTML = "Flower not found";
+        result.style.color = "red";
+    }
+}
+
+// Run when page loads
+window.onload = function () {
+    displayFlowers();
+};
