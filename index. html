@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Lover </title>
+    <!--style link-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="login-page">
+<h1>Rose Lover Login</h1>
+<input type="text"
+id="username"
+placeholder="Enter Your Name">
+<button onclick="login()">
+Login
+</button>
+<p id="message"></p>
+</div>
+<div  id="website" style="display :none">
+
+    <!--Header Start-->
+   <header>
+    <div id="navbar">
+        <img src="./img/Layer 0.png" alt="Flower Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#wrapping">Wrapping</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#manage">Manage Flowers</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+              <h1>Welcome To <span class="primary-text"> Rose Lover </span>Shop</h1>
+              <p>Here you can find the most beautiful arrangments and finest natural flower for all your occasions</p>
+              <a href="#" class="btn btn-primary">Order Your Bouquet</a>
+
+
+    </div>
+   </header>
+   
+   
+    <!--Header End-->
+<main>
+    <!--about Start-->
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h2>Our Floral Jounrney</h2>
+                <p>More than 15 years of crafting beautiful memorires</p>
+            </div>
+            <div class="about-content">
+            <div>
+            <p>
+               Welcome to Rose Lover ,where flowers are more than just 
+               a gift-they are a language of love,joy,and comfort.
+               Founded wiht a deep passion for nature`s finest creations,
+               we carefully select each bloom to ensure unmatched freshness
+               and beauty in every arrangement.
+            </p>
+            <p>
+                Whether you are celebrating a grand wedding ,a warm birthday,
+                or simply want to birghten someone`s day ,our expert florists
+                dedicate their creativity to making your floral dreams come true
+                with fast,premium delivery services.
+            </p>
+            <a href="#" class="btn btn-secondary">LEARN MORE</a>
+       </div>
+       <img src="./img/6c350ecaae9e5b4ce9f6a5fc7e21b5f4.jpg" alt="Lover Flower">
+    </div>
+    </section>
+     <!--About End-->
+     <!--wrapping Start-->
+     <section id="wrapping">
+     <div class="container">
+  <div class="title">
+                <h2>Our Special wrapping</h2>
+                <p>More than 15 years of crafting beautiful memorires</p>
+            </div>
+            <div class="wrapping-items">
+                <div>
+                    <img src="./img/4.png" alt="Korean Wrap">
+                    <div>
+                        <h3>Korean -Wrap</h3>
+                        <p>Use thick, waterproof wrapping
+                            paper and a raised background to support the flowers and
+                            accentuate their height.
+                        </p>
+                        <p><del>$20.00</del><span class="primary-text">$15.00</span></p>
+                    
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/55.png" alt="Layered Fluted Wrap">
+                    <div>
+                        <h3>Layered Fluted Wrap</h3>
+                        <p>The packaging is cut and floded successive wavy, rounded
+                            layers that surround the roses like a dress or a circular fan.
+                        </p>
+                        <p><del>$20.00</del><span class="primary-text">$15.00</span></p>
+                    
+                    </div>
+                </div>
+                  <div>
+                    <img src="./img/6.png"   alt="Envelope Bouquet Wrap">
+                    <div>  
+                        <h3>Envelope Bouquet Wrap</h3>
+                        <p>It relies on folding the wrapping paper into sharp angles
+                            and pointed ends resembling overlapping envelopes to frame 
+                            the large round hydrangea flower. 
+                        </p>
+                        <p><del>$20.00</del><span class="primary-text">$15.00</span></p>
+                    
+                    </div>
+                </div>
+
+
+
+            </div>
+
+     </div>
+     </section>
+
+     <!--wrapping End -->
+     <section id="types">
+<div class="container">
+<div class="title">
+<h2>Our Special Types</h2>
+<p>Types of Fresh Flowers</p>
+</div>
+<div class="types-items">
+<div class="types-item">
+<img src="./img/ba420db776232273c75f8cbcab3b3923.jpg" alt="Chrysanthemum">
+<div>
+<h3>Chrysanthemum <span>$18.00</span></h3>
+
+<p>Beautiful flower symbolizing happiness and 
+longevity.</p>
+</div>
+</div>
+<div class="types-item">
+<img src="./img/4c58914dfbef2df53354e1c0125b4057.jpg" alt="Lavender">
+<div>
+<h3>Lavender <span>`$18.00</span></h3>
+<p>Known for its calming fragrance and elegant 
+appearance.</p>
+</div>
+</div>
+<div class="types-item">
+<img src="./img/930dbf07e8a1d2a8c8a21b059acb10e3.jpg" alt="Peony">
+<div>
+<h3>Peony <span>$`18.00</span></h3>
+<p>Luxurious flower often associated with 
+romance.</p>
+</div>
+</div>
+<div class="types-item">
+<img src="./img/c3be9c18dc637634ae7360a2231c5930.jpg" alt="Layla">
+<div>
+<h3>Layla <span>`$18.00</span></h3>
+<p>Elegant flower representing purity and 
+beauty.</p>
+</div>
+</div>
+<div class="types-item">
+<img src="./img/2065fec003d410c84f8d3956d71934da.jpg" alt="Jouri Rose">
+<div>
+<h3>Jouri Rose <span>$`18.00</span></h3>
+<p>One of the most famous and fragrant 
+roses.</p>
+</div>
+</div>
+<div class="types-item">
+<img src="./img/396fa38a67ef0c0adcd3bb161799cc5f.jpg" alt="Sunflower">
+<div>
+<h3>Sunflower <span>`$18.00</span></h3>
+<p>Symbol of positivity and warmth.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+    <!--Types End-->
+<!--manage Start-->
+    <section id="manage">
+<div class="container">
+<div class="title">
+<h2>Manage Flowers</h2>
+<p>Add, Delete and Search Flowers</p>
+</div>
+<div class="manage-content">
+<div class="manage-box">
+<h3>Add Flower</h3>
+<input type="text"
+id="flowerName"
+placeholder="Flower Name">
+<button onclick="addFlower()"
+class="btn btn-primary">
+Add Flower
+</button>
+</div>
+<div class="manage-box">
+<h3>Delete Flower</h3>
+<input type="text"
+id="deleteFlower"
+placeholder="Flower Name">
+<button onclick="deleteFlower()"
+class="btn btn-primary">
+Delete Flower
+</button>
+</div>
+<div class="manage-box">
+<h3>Search Flower</h3>
+<input type="text"
+id="searchFlower"
+placeholder="Flower Name">
+<button onclick="searchFlower()"
+class="btn btn-primary">
+Search Flower
+</button>
+<p id="searchResult"></p>
+</div>
+</div>
+<div class="flower-list">
+<h3>Flower List</h3>
+<ul id="flowerList"></ul>
+</div>
+</div>
+</section>
+
+<!--manage End-->
+
+</main>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
